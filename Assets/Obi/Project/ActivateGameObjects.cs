@@ -27,6 +27,16 @@ public class ActivateGameObjects : MonoBehaviour
         else
             activationObject.SetActive(true);
 
-        thisButton.interactable = false;
+        thisButton.interactable = true;
+    }
+
+    public void onButtonClickDeactivate()
+    {
+        if (activationObject.activeInHierarchy == false)
+            activationObject.SetActive(true);
+        else
+            activationObject.SetActive(false);
+
+        thisButton.interactable = true;
     }
 }
