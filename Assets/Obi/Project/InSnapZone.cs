@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class InSnapZone : MonoBehaviour
 {
-    public GameObject interactionObject;
+    public GameObject textCanvas;
+    public GameObject snapObjectViz;
 
     // Start is called before the first frame update
     void Start()
@@ -20,11 +21,13 @@ public class InSnapZone : MonoBehaviour
 
     public void activate()
     {
-        interactionObject.SetActive(true);
+        textCanvas.SetActive(true);
+        snapObjectViz.SetActive(false);
     }
 
     public void deactivate()
     {
-        interactionObject.SetActive(false);
+        textCanvas.SetActive(false);
+        snapObjectViz.SetActive(true);
     }
 }
