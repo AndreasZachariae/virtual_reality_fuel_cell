@@ -8,6 +8,8 @@ public class Reset : MonoBehaviour
 {
 
     public GameObject StartPos;
+    public GameObject AutoPos;
+    public GameObject Station2Pos;
     public float X;
     public float Y;
     public float Z;
@@ -29,7 +31,7 @@ public class Reset : MonoBehaviour
 
     public void activate()
     {
-        StartPos.transform.position = new Vector3(X,Y,Z);
-        StartPos.transform.rotation = Quaternion.Euler(rotX, rotY, rotZ);
+        StartPos.transform.localPosition =  new Vector3(X,Y,Z);
+        StartPos.transform.localRotation =  Quaternion.Euler(rotX, rotY, rotZ);
     }
 }
