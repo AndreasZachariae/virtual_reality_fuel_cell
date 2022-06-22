@@ -8,6 +8,7 @@ public class InSnapzoneSt2 : MonoBehaviour
     public GameObject nextSnap;
     public GameObject nextCanvas;
     public GameObject PreviousCanvas;
+    public GameObject nextPart;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,5 +26,7 @@ public class InSnapzoneSt2 : MonoBehaviour
         nextSnap.SetActive(true);
         nextCanvas.SetActive(true);
         PreviousCanvas.SetActive(false);
+        nextPart.SetActive(true);
+
     }
 }
